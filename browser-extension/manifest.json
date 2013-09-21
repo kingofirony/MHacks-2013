@@ -4,6 +4,7 @@
   "name": "Procrastitiy Belt",
   "description": "Helps block websites not related to your field of study or ones that are probably useles",
   "version": "1.0",
+  "options_page": "options.html",
 
   "permissions": [
     "http://access.alchemyapi.com/calls/",
