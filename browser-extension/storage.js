@@ -1,38 +1,44 @@
-var save = function(concepts){
+function save(concepts){
     for(x = 0;x<concepts.length;x++)
     {
 	saveSingleConcept(concepts[x]);
-	console.log(concepts[x]);
     }
 }
 
-
-var loadText = function(){
-    return chrome.storage.local.get('text',function(){});
+function loadText(){
+    var text;
+    chrome.storage.local.get('text',function(items){
+	text = items;
+    });
+    return text;
 }
 
-var loadRelevance = function(){
-    return chrome.storage.local.get('relevance',function(){});
+function loadRelevance(){
+    var relevance;
+    chrome.storage.local.get('relevance',function(items){
+	relevance = items;
+    });
+    return relevance;
 }
 
 
 
 
 var saveSingleConcept = function(concept){
-    if (chrome.storage.local.get('text',function(){}) == null){
-	chrome.storage.local.set({'text' : Array(concept.text)});
+    var text = loadText();
+    var relevance = loadRelevance();
+    if (text != null){
+	text.push(concept.text);
+	chrome.storage.local.set({'text':text});
     }
     else{
-	x = chrome.storage.local.get('text',function(){});
-	x.push(concept.text);
-	chrome.storage.local.set({'text':x});
+	chrome.storage.local.set({'text':[concept.text]});
     }
-    if (chrome.storage.local.get('relevance',function(){}) == null){
-	chrome.storage.local.set({'relevance':Array(concept.relevance)});
+    if (relevance != null){
+	relevance.push(concept.relevance);
+	chrome.storage.local.set({'relevance':relevance});
     }
     else{
-	x = chrome.storage.local.get('relevance',function(){});
-	x.push(concept.relevance);
-	chrome.storage.local.set({'relevance':x});
+	chrome.storage.local.set({'relevance':[concept.relevance]});
     }
 }
