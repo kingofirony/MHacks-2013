@@ -8,6 +8,7 @@
 		<meta name = "description" content ="">
 		<meta name = "keywords" content = "">
 		<link type="text/css" rel ="stylesheet" href="css/bootstrap.css">
+
 </head>
 
 
@@ -44,19 +45,23 @@
       <p class="text-muted">Procrastination Chained</p>
     </h1>
  
-    <p>Just Do It. - Nike</p>
+    <p>If you're reading this, you are already failing.</p>
 <div id="form">
-    <form method="get" action="/" id="submit-form">
-      <input type="text" id="url" placeholder="Enter URL"  style="width:466px;" />         
+    <ul id="fields">
+             
 <div id="form">  
-  </form>
-    <button type="button" class="btn btn-large btn-inverse"> Add URL </button>
+</ul>
+<a href='#' type="button"  class="btn btn-large btn-inverse"  onclick="createinput()">Add URL</a><form method="get" action="/" id="submit-form">
+    
 </div>
 </div>
 <div class="pull-left">
     <button type="button" class="btn btn-large btn-danger" data-loading-text="Loading..." style="width:300px;" >Start!</button>
 </div>
 
+<script>
+  $('.btn').button('complete')
+</script>
   
 
 </body>
