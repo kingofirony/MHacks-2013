@@ -1,6 +1,7 @@
 Procrastity Belt
 ===========
 By Brian Yan, Peter Jasko, Patrick Liao
+
 Have you ever been assigned a serious project at school or at work? I'm sure you have.
 Have you ever found yourself looking at cat pictures instead of doing that serious project? Again, I'm sure you have.
 Have you ever wished for more self-control so you wouldn't procrastinate so much? If the answer is yes, then I have the solution for you.
