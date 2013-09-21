@@ -59,6 +59,7 @@ function getJsonResponseForURL(url){
 	}
 	
 	arrayOfConcepts = arr;
+	console.log(arr);
 	return arr;
     }
 
