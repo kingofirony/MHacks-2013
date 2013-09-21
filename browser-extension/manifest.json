@@ -6,7 +6,8 @@
   "version": "1.0",
 
   "permissions": [
-    "http://access.alchemyapi.com/calls/"
+    "http://access.alchemyapi.com/calls/",
+    "storage"
   ],
   "browser_action": {
     "default_icon": "icon.png",
