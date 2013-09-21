@@ -1,0 +1,34 @@
+function save(concepts){
+    var texts = loadText();
+    var relevances = loadRelevance;
+    if (texts == null){
+	texts = [];
+    }
+    if (relevances == null){
+	relevances = [];
+    }
+    for(var x = 0; x < concepts.length; x++)
+    {
+	texts.push(concepts[x].text);
+    }
+    for(var x = 0; x<concepts.length;x++)
+    {
+	relevances.push(concepts[x].relevance);
+    }
+    localStorage["text"]=texts;
+    localStorage["relevance"] = relevances;
+}
+
+function loadText(){
+    return localStorage["text"];
+}
+
+function loadRelevance(){
+    return localStorage["relevance"];
+}
+
+
+function testCall(){
+    var concepttest = [new Concept('test',1),new Concept('hi',2)]
+    save(concepttest);
+}

@@ -4,8 +4,9 @@
   "name": "Procrastitiy Belt",
   "description": "Helps block websites not related to your field of study or ones that are probably useles",
   "version": "1.0",
-
-  "content_scripts": [{
+  "options_page": "/html/options.html",	
+  
+"content_scripts": [{
       "matches": ["<all_urls>"],
       "js": ["js/corpus_generation.js","js/CheckIfRelevant.js","js/jquery-2.0.3.min.js"]
   }],
