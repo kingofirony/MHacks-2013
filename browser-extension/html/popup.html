@@ -3,6 +3,9 @@
 
 <script src="../js/jquery-2.0.3.min.js"></script>  
 
+<script>
+$("#clear_button").click(function(){localStorage.clear();});
+</script>
 
 <style>
 body{
@@ -17,19 +20,31 @@ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
-#new_rule_button{
-font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-position:absolute;
+#clear_button{
  left:0;
         right:0;
         margin-left:auto;
         margin-right:auto;
 color:#a9354c;
-bottom:5%;
 font-size:1.2em;
 text-decoration:none;
 background-color:#FFFFFF;
 width:40%;
+border-radius:5px;
+ font-weight: bold;
+}
+
+#new_rule_button{
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+color:#a9354c;
+bottom:5%;
+font-size:1.2em;
+text-decoration:none;
+background-color:#FFFFFF;
+width:45%;
 border-radius:5px;
  font-weight: bold;
 }
@@ -46,7 +61,7 @@ color:#FFFFFF;
 font-size:1.5em;
 text-decoration:none;
 background-color:red;
-width:40%;
+width:45%;
 border-radius:5px;
  font-weight: bold;
 }
@@ -63,8 +78,12 @@ border-radius:5px;
   </head>
   <body>
 
+<center><a id="clear_button" target="" href="">Clear Procrastity Belt<a></center>
+<br><br><center><a id="new_rule_button" target="_blank" href="/html/index.html">Add Belt<a></center>
 
-<center><a id="new_rule_button" target="_blank" href="/html/index.html">View/Add Rule<a></center>
+
+
+
   </body>
 </html>
 
