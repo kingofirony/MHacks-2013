@@ -13,8 +13,6 @@ var listToString = function(array){
 
 var removeSpaces = function(text){
     var x = text;
-    x = x.replace(/(\r\n|\n|\r)/gm," ");
-    x = x.replace(/\t+/g," ");
-    x = x.replace(/[^a-zA-Z0-9 .']/g,"");
-    return x;
+    x.split('<p>');
+    console.log(x);
 }
