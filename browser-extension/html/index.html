@@ -9,6 +9,10 @@
 		<meta name = "keywords" content = "">
 		<link type="text/css" rel ="stylesheet" href="css/bootstrap.css">
 
+		<script src="../js/jquery-2.0.3.min.js";></script>
+		<script src="../js/index.js"></script>
+		<script src="../js/options.js"></script>
+		<script src="../js/corpus_generation.js"></script>
 </head>
 
 
@@ -78,22 +82,21 @@
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br><br>
 <div class="form">
 <form class="navbar-search">
-  <input type="text" class="url" placeholder="https://" style="width:400px;">
-</form>
+  <input type="text" id="form1"  class="url" placeholder="https://" style="width:400px;">
+<br></form>
+
 </div>
 
 <br></br>
 <br></br>
 <br>
-
-<a href='#' type="button"  class="btn btn-large btn-inverse"  onclick="" class="pull-left" style="width:200px;", >Add URL</a>
-  
 <br>
+<button id="add_url_button"  class="btn btn-large btn-inverse"   class="pull-left" style="width:240px;", >Add URL</button><br>
 
-    <button type="button" class="btn btn-large btn-danger"  style="margin-top:10px; width:240px;"   >Start Procrastity Belt</button>
+    <button type="button" class="btn btn-large btn-danger" id="start_button"  style="margin-top:10px; width:240px;">Start Procrastity Belt</button>
 
 
 </div>
