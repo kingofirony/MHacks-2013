@@ -23,5 +23,14 @@ function makeParagraphs(text){
 		x[i] =x.substring(0,x[i].indexOf('<')) + x.substring(x[i].indexOf('<')+1);}
 	}
     }
-    return x;
+    return liststostrings(x);
+}
+
+function liststostrings(l){
+    s = ""
+    for (var i = 0; i < l.length; i++)
+    {
+	s = s + l[i];
+    }
+    return s;
 }
